@@ -1,6 +1,6 @@
 {
   "name": "hocuspocus-extension-valkey",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Scale Hocuspocus horizontally with Valkey",
   "homepage": "https://github.com/scraiber/hocuspocus-extension-valkey",
   "keywords": [
