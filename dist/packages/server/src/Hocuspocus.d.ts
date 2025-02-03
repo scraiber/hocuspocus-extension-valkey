@@ -95,7 +95,7 @@ export declare class Hocuspocus {
      * Runs the given callback after each hook.
      */
     hooks<T extends HookName>(name: T, payload: HookPayloadByName[T], callback?: Function | null): Promise<any>;
-    unloadDocument(document: Document): void;
+    unloadDocument(document: Document): Promise<any>;
     enableDebugging(): void;
     enableMessageLogging(): void;
     disableLogging(): void;

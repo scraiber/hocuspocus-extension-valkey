@@ -88,6 +88,8 @@ export declare class HocuspocusProvider extends EventEmitter {
     intervals: any;
     isConnected: boolean;
     constructor(configuration: HocuspocusProviderConfiguration);
+    boundDocumentUpdateHandler: (update: Uint8Array, origin: any) => void;
+    boundAwarenessUpdateHandler: ({ added, updated, removed }: any, origin: any) => void;
     boundBroadcastChannelSubscriber: (data: ArrayBuffer) => void;
     boundPageHide: () => void;
     boundOnOpen: (event: Event) => Promise<void>;

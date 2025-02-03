@@ -7,10 +7,10 @@
 npm pack @hocuspocus/extension-redis
 ```
 
-- Then we obtain a file like `hocuspocus-extension-redis-2.13.7.tgz` and we extract it via
+- Then we obtain a file like `hocuspocus-extension-redis-2.15.1.tgz` and we extract it via
     
 ```bash
-tar -xzf hocuspocus-extension-redis-2.13.7.tgz
+tar -xzf hocuspocus-extension-redis-2.15.1.tgz
 ```
 
 and we obtain a `package` directory. 
@@ -37,12 +37,12 @@ and we obtain a `package` directory.
 
     "devDependencies": {
       # remove @types/ioredis
-      "@types/lodash.debounce": "^4.0.6",
-      "@types/redlock": "^4.0.3"
+      "@types/lodash.debounce": "^4.0.9",
+      "@types/redlock": "^4.0.7"
     },
     "dependencies": {
       ... 
-      # replace ioredis with "iovalkey": "^0.2.1",
+      # replace ioredis with "iovalkey": "^0.3.1",
       ...
     },
     ...
