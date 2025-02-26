@@ -29,20 +29,20 @@
     "dist"
   ],
   "devDependencies": {
-    "@types/lodash.debounce": "^4.0.9",
-    "@types/redlock": "^4.0.7"
+    "@types/lodash.debounce": "4.0.9",
+    "@types/redlock": "4.0.7"
   },
   "dependencies": {
-    "@hocuspocus/server": "^2.15.1",
+    "@hocuspocus/server": "2.15.2",
     "iovalkey": "^0.3.1",
-    "kleur": "^4.1.5",
-    "lodash.debounce": "^4.0.8",
+    "kleur": "4.1.5",
+    "lodash.debounce": "4.0.8",
     "redlock": "^4.2.0",
-    "uuid": "^11.0.5"
+    "uuid": "11.1.0"
   },
   "peerDependencies": {
     "y-protocols": "^1.0.6",
-    "yjs": "^13.6.23"
+    "yjs": "13.6.23"
   },
   "gitHead": "b3454a4ca289a84ddfb7fa5607a2d4b8d5c37e9d"
 }
