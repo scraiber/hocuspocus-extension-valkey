@@ -17,14 +17,18 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 24
-          registry-url: 'https://registry.npmjs.org'
+          # No registry-url: it writes an .npmrc with a placeholder _authToken,
+          # which makes npm attempt (failing) token auth instead of OIDC.
+          # npm publishes to registry.npmjs.org by default via Trusted Publishing.
 
       - name: Update npm (Trusted Publishing needs >= 11.5.1)
         run: npm install -g npm@latest
 
       - name: Publish package on NPM 📦
         # No NODE_AUTH_TOKEN: auth happens via OIDC Trusted Publishing.
-        # Configure the trusted publisher for this package on npmjs.com first.
+        # Requires a trusted publisher for this package on npmjs.com
+        # (scraiber/hocuspocus-extension-valkey, workflow publish.yml) and a
+        # repository field in package.json for provenance.
         run: npm publish
 
       - name: Slack Notification
